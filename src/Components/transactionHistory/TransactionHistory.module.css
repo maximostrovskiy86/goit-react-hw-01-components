@@ -1,12 +1,10 @@
 .transaction {
-    width: 40%;
+    width: 600px;
     margin-left: 50px;
 }
 
-
 .row {
     height: 30px;
-    padding-left: 12%;
     text-align: left;
     background-color: #fff;
 }
@@ -22,6 +20,20 @@
     color: #fff;
 }
 
-.item {
-    /*composes: row;*/
+.wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:global(td) {
+    padding-left: 30px;
+}
+
+:global(td) {
+    padding-left: 35px;
+}
+
+:global(th) {
+    padding-left: 35px;
 }
