@@ -3,7 +3,7 @@ import user from "../data/user.json"
 import statistic from "../data/statistical-data.json"
 import friends from "../data/friends.json"
 import transactions from "../data/transactions.json"
-import colors from "../data/colors";
+import colors from "../data/colors.json";
 import Profile from "./profile/Profile"
 import Statistics from "./statistics/Statistics";
 import FriendList from "./friendList/FriendList";
