@@ -1,0 +1,38 @@
+.status {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.active {
+    composes: status;
+    background-color: #51ae50;
+}
+
+.disabled {
+    composes: status;
+    background-color: #ff4f51;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%),
+    0 1px 1px rgb(0 0 0 / 14%),
+    0 2px 1px rgb(0 0 0 / 20%);
+}
+
+.item + .item {
+    margin-top: 10px;
+}
+
+.item * {
+    margin-left: 5px;
+}
+
+.name {
+    font-size: 26px;
+}

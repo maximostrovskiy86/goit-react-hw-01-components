@@ -1,0 +1,27 @@
+.transaction {
+    width: 40%;
+    margin-left: 50px;
+}
+
+
+.row {
+    height: 30px;
+    padding-left: 12%;
+    text-align: left;
+    background-color: #fff;
+}
+
+.row:nth-child(even) {
+    background-color: #ecf1f4;
+}
+
+.head {
+    height: 35px;
+    composes: row;
+    background-color: #00bcd5;
+    color: #fff;
+}
+
+.item {
+    /*composes: row;*/
+}
