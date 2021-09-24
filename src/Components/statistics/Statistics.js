@@ -14,11 +14,9 @@ const Statistics = ({title, stats, colors}) => {
 
     return (
         <section className={s.statistics}>
-            <h2 className="title">{title.length && title}</h2>
-
+            {title.length && <h2 className="title">{title}</h2>}
             <ul className={s.statList}>
                 {stats.map(stat => (
-
                     <li key={stat.id} className={s.item} style={{backgroundColor: randomColor()}}>
                         <span className="label">{stat.label}</span>
                         <span className="percentage">{stat.percentage}%</span>

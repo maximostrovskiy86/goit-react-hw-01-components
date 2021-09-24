@@ -2,6 +2,7 @@ import s from "./TransactionHistory.module.css";
 import PropTypes from "prop-types";
 
 const TransactionHistory = ({items}) => {
+    console.log(items)
     return (
         <div className={s.wrapper}>
             <h2>Transactions</h2>
@@ -28,11 +29,11 @@ const TransactionHistory = ({items}) => {
 }
 
 TransactionHistory.propTypes = {
-    friend: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        name: PropTypes.string.isRequired,
-        avatar: PropTypes.string.isRequired,
-        isOnline: PropTypes.bool.isRequired,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+        amount: PropTypes.string.isRequired,
+        currency: PropTypes.string.isRequired,
     }))
 }
 
